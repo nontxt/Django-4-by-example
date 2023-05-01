@@ -9,6 +9,10 @@ django-taggit = "==3.0.0"
 markdown = "==3.4.1"
 psycopg2-binary = "==2.9.3"
 pillow = "==9.2.0"
+social-auth-app-django = "*"
+django-extensions = "*"
+werkzeug = "*"
+pyopenssl = "*"
 
 [dev-packages]
 
