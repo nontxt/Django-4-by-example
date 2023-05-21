@@ -13,6 +13,7 @@ social-auth-app-django = "*"
 django-extensions = "*"
 werkzeug = "*"
 pyopenssl = "*"
+easy-thumbnails = "*"
 
 [dev-packages]
 
