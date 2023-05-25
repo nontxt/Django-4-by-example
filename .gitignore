@@ -1,4 +1,4 @@
-*/migrations/
+**/migrations/
 /.idea
 *.sqlite3
-/bookmarks/media/images/
+/bookmarks/media/
