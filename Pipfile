@@ -20,6 +20,9 @@ celery = "==5.2.7"
 flower = "==1.1.0"
 stripe = "==4.0.2"
 weasyprint = "==56.1"
+django-rosetta = "==0.9.8"
+django-parler = "==2.3"
+django-localflavor = "==3.1"
 
 [dev-packages]
 

@@ -27,8 +27,8 @@ class Recommender:
             flat_ids = ''.join([str(id_) for id_ in product_ids])
             tmp_key = f'tmp_{flat_ids}'
             keys = [self.get_product_key(id_) for id_ in product_ids]
-            r.zunionstore(tmp_key, keys)
-            r.zrem(tmp_key, *product_ids)
+            r.zunionstore(tmp_key, keys)    # Create temp sorted set
+            r.zrem(tmp_key, *product_ids)   # Remove product_ids from sorted set
             suggestions = r.zrange(tmp_key, 0, 1, desc=True)[:max_results]
             r.delete(tmp_key)
         suggested_products_ids = [int(id_) for id_ in suggestions]

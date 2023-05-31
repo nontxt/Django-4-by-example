@@ -1,18 +1,19 @@
 {% extends "shop/base.html" %}
+{% load i18n %}
 {% load static %}
 
-{% block title %}Pay your order{% endblock %}
+{% block title %}{% trans "Pay your order" %}{% endblock %}
 
 {% block content %}
-    <h1>Order summary</h1>
+    <h1>{% trans "Order summary" %}</h1>
     <table class="cart">
         <thead>
             <tr>
-                <th>Image</th>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
+                <th>{% trans "Image" %}</th>
+                <th>{% trans "Product" %}</th>
+                <th>{% trans "Price" %}</th>
+                <th>{% trans "Quantity" %}</th>
+                <th>{% trans "Total" %}</th>
             </tr>
         </thead>
         <tbody>
@@ -30,21 +31,23 @@
             {% endfor %}
             {% if order.coupon %}
                 <tr class="subtotal">
-                    <td>Subtotal</td>
+                    <td>{% trans "Subtotal" %}</td>
                     <td colspan="3"></td>
                     <td class="num">${{ order.get_total_cost_before_discount|floatformat:2 }}</td>
                 </tr>
                 <tr>
                     <td>
-                        "{{ order.coupon.code }}" coupon
-                        ({{ order.discount }}% off)
+                        {% blocktrans with coupon=order.coupon.code discount=order.discount %}
+                            "{{ coupon }}" coupon
+                            ({{ discount }}% off)
+                        {% endblocktrans %}
                     </td>
                     <td colspan="3"></td>
                     <td colspan="num neg">- ${{ order.get_discount|floatformat:2 }}</td>
                 </tr>
             {% endif %}
             <tr class="total">
-                <td>Total</td>
+                <td>{% trans "Total" %}</td>
                 <td colspan="3"></td>
                 <td class="num">${{ order.get_total_cost|floatformat:2 }}</td>
             </tr>
@@ -52,6 +55,6 @@
     </table>
     <form action="{% url 'payment:process' %}" method="post">
         {% csrf_token %}
-        <input type="submit" value="Pay now">
+        <input type="submit" value="{% trans 'Pay now' %}">
     </form>
 {% endblock %}

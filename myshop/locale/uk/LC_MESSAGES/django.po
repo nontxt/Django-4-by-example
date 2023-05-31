@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-31 12:04+0000\n"
+"PO-Revision-Date: 2023-05-31 12:42+0000\n"
+"Last-Translator:   <admin@mail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Language: uk_UA\n"
+"X-Source-Language: C\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: cart/forms.py:8 cart/templates/cart/detail.html:14
+#: payment/templates/payment/process.html:15
+msgid "Quantity"
+msgstr "Кількість"
+
+#: cart/templates/cart/detail.html:5 cart/templates/cart/detail.html:8
+msgid "Your shopping cart"
+msgstr "Ваш кошик"
+
+#: cart/templates/cart/detail.html:12
+#: payment/templates/payment/process.html:12
+msgid "Image"
+msgstr "Зображення"
+
+#: cart/templates/cart/detail.html:13
+#: payment/templates/payment/process.html:13
+msgid "Product"
+msgstr "Продукт"
+
+#: cart/templates/cart/detail.html:15 cart/templates/cart/detail.html:40
+msgid "Remove"
+msgstr "Видалити"
+
+#: cart/templates/cart/detail.html:16
+msgid "Unit price"
+msgstr "Ціна за одиницю"
+
+#: cart/templates/cart/detail.html:17
+#: payment/templates/payment/process.html:14
+msgid "Price"
+msgstr "Ціна"
+
+#: cart/templates/cart/detail.html:34
+msgid "Update"
+msgstr "Оновити"
+
+#: cart/templates/cart/detail.html:51
+#: payment/templates/payment/process.html:34
+msgid "Subtotal"
+msgstr "Проміжна вартість"
+
+#: cart/templates/cart/detail.html:57
+#, python-format
+msgid ""
+"\n"
+"                            \"%(coupon)s coupon\n"
+"                            (%(discount)s%% off)\n"
+"                        "
+msgstr ""
+"\n"
+"\"Купон %(coupon)s (знижка %(discount)s%%)\n"
+"                        "
+
+#: cart/templates/cart/detail.html:69
+#: payment/templates/payment/process.html:16
+#: payment/templates/payment/process.html:50
+msgid "Total"
+msgstr "Загальна вартість"
+
+#: cart/templates/cart/detail.html:77
+msgid "People who bought this also bought"
+msgstr "Люди які купили також купують"
+
+#: cart/templates/cart/detail.html:88
+msgid "Apply a coupon"
+msgstr "Використати купон"
+
+#: cart/templates/cart/detail.html:92
+msgid "Apply"
+msgstr "Використати"
+
+#: cart/templates/cart/detail.html:95
+msgid "Continue shopping"
+msgstr "Продовжити покупку"
+
+#: cart/templates/cart/detail.html:96
+msgid "Checkout"
+msgstr "Перейти до оформлення"
+
+#: coupons/forms.py:6
+msgid "Coupon"
+msgstr "Купон"
+
+#: myshop/settings.py:113
+msgid "English"
+msgstr "Англійська"
+
+#: myshop/settings.py:114
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: payment/templates/payment/canceled.html:5
+msgid "Payment canceled"
+msgstr "Оплата скасована"
+
+#: payment/templates/payment/canceled.html:8
+msgid "Your payment has not been processed"
+msgstr "Ваша оплата була скасована"
+
+#: payment/templates/payment/canceled.html:9
+msgid "There was a problem processing your payment"
+msgstr "Не вдалося обробити ваш платіж"
+
+#: payment/templates/payment/completed.html:5
+msgid "Payment successful"
+msgstr "Успішно сплачено"
+
+#: payment/templates/payment/completed.html:8
+msgid "Your payment was successful"
+msgstr "Ваш платіж пройшов успішно"
+
+#: payment/templates/payment/completed.html:9
+msgid "Your payment has been processed successfully"
+msgstr "Ваш платіж успішно оброблено"
+
+#: payment/templates/payment/process.html:5
+msgid "Pay your order"
+msgstr "Сплатити заповлення"
+
+#: payment/templates/payment/process.html:8
+msgid "Order summary"
+msgstr "Підсумок замовлення"
+
+#: payment/templates/payment/process.html:40
+#, python-format
+msgid ""
+"\n"
+"                            \"%(coupon)s\" coupon\n"
+"                            (%(discount)s%% off)\n"
+"                        "
+msgstr ""
+"\n"
+"\"Купон %(coupon)s\"  (знижка %(discount)s%%)\n"
+"                        "
+
+#: payment/templates/payment/process.html:58
+msgid "Pay now"
+msgstr "Сплатити"
+
+#: shop/templates/shop/base.html:7 shop/templates/shop/base.html:12
+msgid "My shop"
+msgstr "Мій магазин"
+
+#: shop/templates/shop/base.html:18
+msgid "Your cart"
+msgstr "Ваш кошик"
+
+#: shop/templates/shop/base.html:20
+#, python-format
+msgid ""
+"\n"
+"                            %(items)s item, $%(total)s\n"
+"                        "
+msgid_plural ""
+"\n"
+"                            %(items)s items, $%(total)s\n"
+"                        "
+msgstr[0] ""
+"\n"
+"%(items)s продукт, $%(total)s"
+msgstr[1] ""
+"\n"
+"%(items)s продукти, $%(total)s"
+msgstr[2] ""
+"\n"
+"%(items)s продуктів, $%(total)s"
+
+#: shop/templates/shop/base.html:27
+msgid "Your cart is empty"
+msgstr "Ваш кошик порожній"
+
+#: shop/templates/shop/product/detail.html:18
+msgid "Add to cart"
+msgstr "Додати до кошика"
+
+#: shop/templates/shop/product/detail.html:23
+msgid "Pepople who bought this also  bought"
+msgstr "Люди що купили також купують"
+
+#: shop/templates/shop/product/list.html:9
+#: shop/templates/shop/product/list.html:32
+msgid "Products"
+msgstr "Продукти"
+
+#: shop/templates/shop/product/list.html:15
+msgid "Categories"
+msgstr "Категорії"
