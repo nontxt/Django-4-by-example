@@ -28,6 +28,7 @@ django-embed-video = "==1.4.4"
 pymemcache = "==3.5.2"
 django-redisboard = "==8.3.0"
 attrs = "*"
+djangorestframework = "*"
 
 [dev-packages]
 
