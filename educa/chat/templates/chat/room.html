@@ -21,7 +21,7 @@
         document.getElementById('course-id').textContent
     );
     const requestUser = JSON.parse(document.getElementById('request-user').textContent);
-    const url = 'ws://' + window.location.host + '/ws/chat/room/' + courseId + '/';
+    const url = 'wss://' + window.location.host + '/ws/chat/room/' + courseId + '/';
     const chatSocket = new WebSocket(url);
 
     chatSocket.onmessage = function(event) {

@@ -1,0 +1,18 @@
+-i https://pypi.org/simple
+
+django==4.2.2
+django-braces==1.15.0
+django-debug-toolbar==3.6.0
+django-embed-video==1.4.4
+django-redisboard==8.3.0
+pillow==9.2.0
+# pymemcache==3.5.2
+sqlparse==0.4.4 ; python_version >= '3.5'
+redis==4.3.4
+requests==2.31.0 ; python_version >= '3.7'
+djangorestframework==3.14.0
+channels==3.0.5
+channels-redis==3.4.1
+psycopg2-binary==2.9.3
+uwsgi==2.0.21
+daphne==3.0.2 ; python_version >= '3.6'

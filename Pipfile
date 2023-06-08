@@ -32,6 +32,7 @@ djangorestframework = "*"
 channels = "==3.0.5"
 channels-redis = "==3.4.1"
 asgiref = "==3.7.2"
+uwsgi = "*"
 
 [dev-packages]
 
